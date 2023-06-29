@@ -6,7 +6,7 @@
 body {
     font-family: Inter;
 }
-.header-container {
+.section-job {
     background-color:rgba(43, 74, 97, 0.87);
     background-image: url(img/header-bg.png);
     background-size: cover;
@@ -26,7 +26,10 @@ h1 {
     border-bottom: 3px solid #FFF;
     padding: 39px 0;
     background: url('img/header-top.png');
-    background-color: rgba(43, 74, 97, 0.87);
+    opacity: 0.7;
+}
+header {
+    background-image: url('img/Rectangle.png');
 }
 nav a {
     text-align: center;
@@ -61,12 +64,8 @@ button {
     width: 260px;
     height: 80px;
     margin-top: 42px;
+    cursor: pointer;
 }
-/* .button:nth-child(1) {
-    display: inline-block;
-    margin: 355px auto;
-} */
-/* switcher */
 .switcher a {
     position: relative;
     cursor: pointer;
@@ -139,7 +138,7 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-.header-container {
+.section-job {
     display: flex;
     justify-content: space-around;
     align-items: end;
