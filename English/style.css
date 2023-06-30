@@ -66,6 +66,11 @@ button {
     margin-top: 42px;
     cursor: pointer;
 }
+/* .button:nth-child(1) {
+    display: inline-block;
+    margin: 355px auto;
+} */
+/* switcher */
 .switcher a {
     position: relative;
     cursor: pointer;
@@ -181,6 +186,48 @@ h3 {
     background-size: cover;
     height: 1000px;
 }
+video {
+    display: none;
+    width: 720px;
+    height: 640px;
+}
+.menu-button {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border-radius: 45px 0px;
+    border: 3px solid #26C7EA;
+    color: #26C6EA;
+    font-size: 20px;
+    width: 260px;
+    height: 80px;
+    cursor: pointer;
+    background: #0B0E66;
+}
+.video-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .menu-button::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: green;
+    transform: rotate(45deg);
+}
+.menu-button::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: blue;
+    transform: rotate(-45deg);
+} */
 /* section 4 */
 .language-learn {
     background-image: url(img/section4.png);
