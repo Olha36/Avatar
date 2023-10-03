@@ -59,7 +59,6 @@ button {
     width: 141px;
     height: 41.694px;
     text-align: center;
-    padding: 10px 48px;
 }
 .button {
     border-radius: 45px 0px;
@@ -73,6 +72,9 @@ button {
     display: none;
     background-image: url(./img/modal-join-clan.png);
     width: 600px;
+}
+.modal-join-clan button {
+    padding: 10px 48px;
 }
 .active {
     display: block;
@@ -113,55 +115,38 @@ button {
     margin: 0 170px 23px;
 }
 /* switcher */
+.switcher {
+    padding-left: 49px;
+    align-items: center;
+    display: flex;
+}
 .switcher a {
-    position: relative;
-    cursor: pointer;
-    z-index: 2;
     color: #FFF;
-    text-align: center;
-    font-size: 16px;
     font-family: 'Hammersmith One', sans-serif;
     text-decoration: none;
-    vertical-align: -webkit-baseline-middle;
+    font-size: 16px;
 }
 .switch {
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    width: 36px;
+    height: 20px;
+    margin: 0 10px;
     position: relative;
+}
+
+.slider::after {
     display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    z-index: 1;
-    /* cursor: pointer; */
-    top: 0;
-    left: 0;
-    /* right: 0; */
-    bottom: 0;
-    background-color: rgba(43, 74, 97, 0.87);
-    -webkit-transition: .4s;
-    transition: .4s;
-    padding-left: 10px;
-}
-
-.slider:before {
-    position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    right: 3px;
+    top: 1px;
 }
+
 /* 
 input:checked + .slider {
     background-color: #2196F3;
