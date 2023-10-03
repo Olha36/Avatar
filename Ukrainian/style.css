@@ -71,6 +71,7 @@ button {
 .modal-join-clan {
     display: none;
     background-image: url(./img/modal-join-clan.png);
+    background-repeat: no-repeat;
     width: 600px;
 }
 .modal-join-clan button {
@@ -111,8 +112,8 @@ button {
     height: 40px;
     border-radius: 2px;
 }
-.modal-button {
-    margin: 0 170px 23px;
+form .modal-button {
+    margin: 39px 99px 24px;
 }
 /* switcher */
 .switcher {
