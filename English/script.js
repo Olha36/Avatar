@@ -3,6 +3,12 @@ console.log(trailer);
 const menuButton = document.querySelector(".menu-button");
 console.log(menuButton);
 const video = document.querySelector(".video");
+const modalJoinClan = document.querySelector('.modal-join-clan');
+
+const joinClanButton = document.querySelector('.button');
+console.log(joinClanButton);
+const crossModalJoinClan = document.querySelector('.cross');
+console.log(crossModalJoinClan);
 
 trailer.addEventListener('click', function() {
     video.style.display = 'block';
@@ -17,4 +23,12 @@ menuButton.addEventListener('click', function() {
         trailer.style.display = 'block'
         menuButton.style.display='none'
     }
+})
+
+joinClanButton.addEventListener('click', function() {
+    modalJoinClan.classList.add('active');
+})
+
+crossModalJoinClan.addEventListener('click', function() {
+    modalJoinClan.classList.remove('active');
 })
